@@ -1,95 +1,70 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
+import './homepage.css'
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <div className='main-page-box'>
+      <div className="results">
+        <h1>See our satisfied patients progress!!</h1>
+        <div className="results-carousel-main">
+          <div className="results-carousel-holder">
+            <div className="results-collage">
+              <div className="result-img">
+                <span className='result-label'>Before</span>
+                <img src="results/whitespot-before.jpg" alt="" />
+              </div>
+              <div className="result-img">
+                <span className='result-label'>After</span>
+                <img src="results/whitespot-after.jpg" alt="" />
+              </div>
+            </div>
+            <div className="results-details-holder">
+              <span>Disease: </span>
+              <span style={{ fontWeight: "bold", fontSize: "2rem" }}>White spots</span>
+              <br />
+              <span>Duration: </span>
+              <span>2 months</span>
+              <br />
+              <span>Patient age: </span>
+              <span>16yrs</span>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="pannelists">
+        <h1 style={{ color: "blue" }}>Meet our pannelists</h1>
+        <div className="pannel-holder">
+          <div className="pannel">
+            <div className="doctor-personal-info">
+              <div className="doctor-img-holder">
+                <img src="Dr_Mamta.png" alt="" />
+              </div>
+              <span style={{fontSize:"1.2rem",fontWeight:"bold"}}>
+                Dr. Mamta Garg
+              </span>
+              <br/>
+              <span>Senior consultant</span>
+              <br/>
+              <span>Amulya Ayurved,Meerut</span>
+            </div>
+            <div className="doctor-expand">
+              <div className="expertise">Expertise:</div>
+              <ul>
+                <li>Arthritis</li>
+                <li>Joint-pain</li>
+                <li>Fatty-liver</li>
+                <li>Ladies problem</li>
+                <li>Hair fall</li>
+                <li>Fat loss</li>
+              </ul>
+              <div className='consult-button-box'>
+              <button className='consult-button'>Consult Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="spacer">
+
+      </div>
     </div>
   );
 }

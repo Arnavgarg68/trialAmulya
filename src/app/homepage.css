@@ -1,0 +1,158 @@
+.main-page-box{
+    height: 100%;
+    margin-top: 2%;
+    overflow-y: auto;
+}
+.spacer{
+    height: 50vh;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    font-family: "poppins";
+    font-size: 2.5rem;
+    color: rgb(248, 164, 8);
+    padding: 5px;
+}
+.results-carousel-main{
+    /* background-color: antiquewhite; */
+    width: 100%;
+    padding: 10px;
+    /* background-color: rgb(113, 251, 118); */
+}
+.results-carousel-holder{
+    /* display: grid; */
+    display: flex;
+    /* flex-direction: row; */
+    /* grid-template-columns: 1.5fr 1fr; */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    gap: 10px;
+
+}
+.results-collage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+}
+.result-img{
+    /* outline: 2px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
+}
+@media screen and (max-width:650px) {
+    .result-img{
+        width: 150px;
+        height: 200px;
+        border-radius: 10px;
+        position: relative;
+    }
+}
+.result-label{
+    position: absolute;
+    bottom: 2%;
+    font-family: "poppins";
+    color: white;
+    font-size: 1.5rem;
+}
+.result-img>img{
+    /* outline: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+    /* max-height:400px; */
+    object-fit: cover;
+}
+.results-details-holder{
+    font-family: "poppins";
+    font-size: 1.5rem;
+    height: 100%;
+    padding: 10px;
+    /* color: rgb(14, 118, 0); */
+    /* background-color: aquamarine; */
+}
+
+/* pannel */
+.pannelists{
+    margin-top: 2%;
+    background-color: rgb(184, 239, 239);
+}
+.pannel-holder{
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pannel{
+    width: 100%;
+    max-width: 900px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+@media screen and (max-width:500px) {
+    .pannel{
+        flex-wrap:wrap;
+        /* background-color: rgb(181, 179, 179); */
+        align-items: center;
+        justify-content: center;
+    }
+}
+.doctor-personal-info{
+    padding: 10px;
+    text-align: center;
+}
+.doctor-personal-info>span{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "poppins";
+    width: 100%;
+}
+.doctor-expand{
+    /* background-color: blue; */
+    width: 100%;
+    padding: 10px;
+}
+.expertise{
+    font-weight: bold;
+    font-family: "poppins";
+    font-size: 1.5rem;
+}
+.doctor-expand>ul{
+    font-size: 1.1rem;
+    font-family: "poppins";
+    padding-left: 20px;
+}
+.consult-button-box{
+    width: 100%;
+    /* height: 100%; */
+    padding-right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 5%;
+    /* background-color: aquamarine; */
+}
+.consult-button{
+    background-color: rgb(31, 225, 31);
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(175, 175, 175);
+
+}
