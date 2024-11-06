@@ -1,3 +1,4 @@
+
 import './homepage.css'
 export default function Home() {
   return (
@@ -5,6 +6,50 @@ export default function Home() {
       <div className="results">
         <h1>See our satisfied patients progress!!</h1>
         <div className="results-carousel-main">
+          <div className="results-carousel-holder">
+            <div className="results-collage">
+              <div className="result-img">
+                <span className='result-label'>Before</span>
+                <img src="results/whitespot-before.jpg" alt="" />
+              </div>
+              <div className="result-img">
+                <span className='result-label'>After</span>
+                <img src="results/whitespot-after.jpg" alt="" />
+              </div>
+            </div>
+            <div className="results-details-holder">
+              <span>Disease: </span>
+              <span style={{ fontWeight: "bold", fontSize: "2rem" }}>White spots</span>
+              <br />
+              <span>Duration: </span>
+              <span>2 months</span>
+              <br />
+              <span>Patient age: </span>
+              <span>16yrs</span>
+            </div>
+          </div>
+          <div className="results-carousel-holder">
+            <div className="results-collage">
+              <div className="result-img">
+                <span className='result-label'>Before</span>
+                <img src="results/whitespot-before.jpg" alt="" />
+              </div>
+              <div className="result-img">
+                <span className='result-label'>After</span>
+                <img src="results/whitespot-after.jpg" alt="" />
+              </div>
+            </div>
+            <div className="results-details-holder">
+              <span>Disease: </span>
+              <span style={{ fontWeight: "bold", fontSize: "2rem" }}>White spots</span>
+              <br />
+              <span>Duration: </span>
+              <span>2 months</span>
+              <br />
+              <span>Patient age: </span>
+              <span>16yrs</span>
+            </div>
+          </div>
           <div className="results-carousel-holder">
             <div className="results-collage">
               <div className="result-img">
@@ -37,12 +82,12 @@ export default function Home() {
               <div className="doctor-img-holder">
                 <img src="Dr_Mamta.png" alt="" />
               </div>
-              <span style={{fontSize:"1.2rem",fontWeight:"bold"}}>
+              <span style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
                 Dr. Mamta Garg
               </span>
-              <br/>
+              <br />
               <span>Senior consultant</span>
-              <br/>
+              <br />
               <span>Amulya Ayurved,Meerut</span>
             </div>
             <div className="doctor-expand">
@@ -56,7 +101,7 @@ export default function Home() {
                 <li>Fat loss</li>
               </ul>
               <div className='consult-button-box'>
-              <button className='consult-button'>Consult Now</button>
+                <a target='_blank' href="https://wa.me/917417099103?text=I'm%20interested%20to%20know%20more" className='consult-button'>Consult Now</a>
               </div>
             </div>
           </div>

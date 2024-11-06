@@ -1,7 +1,20 @@
 .main-page-box{
     height: 100%;
     margin-top: 2%;
-    overflow-y: auto;
+    /* overflow-y: auto; */
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 157, 255);
+}
+.results-carousel-main::-webkit-scrollbar{
+    height: 5px;
+}
+.results-carousel-main::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 157, 255);
 }
 .spacer{
     height: 50vh;
@@ -16,19 +29,25 @@ h1{
 }
 .results-carousel-main{
     /* background-color: antiquewhite; */
-    width: 100%;
-    padding: 10px;
+    /* width: 100%; */
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    /* gap: 10px; */
+    gap: 7%;
     /* background-color: rgb(113, 251, 118); */
+    overflow-x: auto;
 }
 .results-carousel-holder{
-    /* display: grid; */
     display: flex;
-    /* flex-direction: row; */
-    /* grid-template-columns: 1.5fr 1fr; */
-    justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
-    /* align-items: center; */
-    gap: 10px;
+    gap: 10%;
+    min-width: 100vw;
+    width: 100%;
+    /* background-color: bisque; */
+    justify-content: center;
+    /* border-right: 2px solid grey; */
 
 }
 .results-collage{
@@ -45,8 +64,8 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
     border-radius: 10px;
     position: relative;
 }
@@ -77,9 +96,11 @@ h1{
 .results-details-holder{
     font-family: "poppins";
     font-size: 1.5rem;
-    height: 100%;
+    /* height: 100%; */
     padding: 10px;
     /* color: rgb(14, 118, 0); */
+    min-width: 320px;
+    object-fit: contain;
     /* background-color: aquamarine; */
 }
 
@@ -146,6 +167,7 @@ h1{
     /* background-color: aquamarine; */
 }
 .consult-button{
+    font-family: 'poppins';
     background-color: rgb(31, 225, 31);
     padding: 10px 10px;
     font-size: 20px;
@@ -154,5 +176,9 @@ h1{
     color: white;
     cursor: pointer;
     box-shadow: 0px 0px 10px rgb(175, 175, 175);
-
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.consult-button:hover{
+    box-shadow: 0px 0px 20px grey;
 }
