@@ -24,23 +24,29 @@ export default function RootLayout({ children }) {
         <nav className={poppins.className}>
           <ul className="nav-listing">
             <li>
-            <Link style={{ textDecoration: "none", color: "white" }} href={"/"}>Offers</Link>
+              <Link style={{ textDecoration: "none", color: "white" }} href={"/"}>Offers</Link>
             </li>
             <li>
-            <Link style={{ textDecoration: "none", color: "white" }} href={"/"}>Therapies</Link>
+              <Link style={{ textDecoration: "none", color: "white" }} href={"/"}>Therapies</Link>
             </li>
             <li>
-            <Link style={{ textDecoration: "none", color: "white" }} href={"/"}>Consultation</Link>
+              <Link style={{ textDecoration: "none", color: "white" }} href={"/"}>Consultation</Link>
             </li>
             <li>
-            <Link style={{ textDecoration: "none", color: "white" }} href={"/"}>Products</Link>
+              <Link style={{ textDecoration: "none", color: "white" }} href={"/"}>Products</Link>
             </li>
             <li>
-            <Link style={{ textDecoration: "none", color: "white" }} href={"/"}>About Us</Link>
+              <Link style={{ textDecoration: "none", color: "white" }} href={"/"}>About Us</Link>
             </li>
           </ul>
         </nav>
         {children}
+        <a className="shake-class whatsapp-box" href="https://wa.me/917417099103?text=I'm%20interested%20to%20know%20more" target="_blank" rel="noopener noreferrer">
+          {/* <div className="badge-whatsapp">
+            <img src="bell" alt="" />
+          </div> */}
+          <img src="whatsapp.png" alt="" />
+        </a>
       </body>
     </html>
   );
